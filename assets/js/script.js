@@ -39,3 +39,7 @@ Promise.all([getDog()])
   .catch((e) => {
     console.log('error promesas', e);
   });
+
+const press = () => {
+  location.reload();
+};
