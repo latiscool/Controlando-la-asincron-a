@@ -17,7 +17,7 @@
 // };
 // request();
 
-//VERSION CON PROMISE.all (con DOM y/o Console.log)
+//VERSION CON PROMISE(con DOM y/o Console.log)
 // ***************************************************
 const urlBase = 'https://dog.ceo/api/breeds/image/random';
 const request = async (url) => {
@@ -32,7 +32,7 @@ const getDog = async () => {
   return request(url);
 };
 
-Promise.all([getDog()])
+Promise([getDog()])
   .then((data) => {
     data;
   })
