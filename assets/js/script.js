@@ -32,7 +32,7 @@ const getDog = async () => {
   return request(url);
 };
 
-Promise([getDog()])
+Promise.all([getDog()])
   .then((data) => {
     data;
   })
